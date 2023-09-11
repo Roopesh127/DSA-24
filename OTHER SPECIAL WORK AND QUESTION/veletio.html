@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var Counter = {
+            count: 0,
+            add: function () {
+                this.count++;
+            }
+        };
+
+        Counter.add();
+        console.log(Counter.count); // Output: 1
+
+        var AnotherCounter = {};
+        AnotherCounter.count = Counter.count; // Corrected assignment
+
+        AnotherCounter.add = Counter.add;
+
+        AnotherCounter.add();
+        console.log(AnotherCounter.count); // Output: 2
+        console.log(Counter.count); // Output: 2
+
+        var YetAnotherCounter = Counter;
+
+        Counter.add();
+        console.log(YetAnotherCounter.count); // Output: 3
+
+    </script>
+</body>
+
+</html>
