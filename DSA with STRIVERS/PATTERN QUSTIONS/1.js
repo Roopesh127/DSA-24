@@ -13,16 +13,27 @@
 // }
 // console.log(square(5))
 
+// function square(x) {
+//     let result = '';
+//     for (let i = 0; i < x; i++) {
+//         for (let j = 0; j < x; j++) {
+//             result += '* ';
+//         }
+//         result += '\n';
+//     }
+//     return result;
+// }
+
+// console.log(square(5));
+
 function square(x) {
-    let result = '';
-    for (let i = 0; i < x; i++) {
-        for (let j = 0; j < x; j++) {
-            result += '* ';
+    let row = "";
+    for (let i = 1; i <= x; i++) {
+        for (j = 1; j <= x; j++) {
+            row = row + "*";
         }
-        result += '\n';
+        row += "\n"
     }
-    return result;
+    console.log(row)
 }
-
-console.log(square(5));
-
+square(5)

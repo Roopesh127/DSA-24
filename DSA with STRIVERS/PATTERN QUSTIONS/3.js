@@ -4,13 +4,15 @@
 // 1234
 // 12345
 
-function leftnumber(x) {
-    for (let i = 1; i <= x; i++) {
-        for (let j = 1; j <= i; j++) {
-            console.log(j)
-        }
-        console.log(i)
-        // console.log('\n')
+
+function leftnum(x){
+   let result = "";
+   for(let i=1;i<=5;i++){
+    for(let j=1;j<=i;j++){
+        result +=i;
     }
+    result+="\n";
+   }
+   return result;
 }
-console.log(leftnumber(5))
+console.log(leftnum(5))
