@@ -1,0 +1,1 @@
+in javascript there is sae problem life old just before code
