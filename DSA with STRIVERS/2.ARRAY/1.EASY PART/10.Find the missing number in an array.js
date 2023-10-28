@@ -3,8 +3,8 @@
 // Input Format: N = 5, array[] = {1,2,4,5}
 // Result: 3
 
-
-const n = 5;
+// ---> by first method
+/*  const n = 5;
 const arr = [1,2,3,5]
 
 function missing(){
@@ -20,7 +20,19 @@ for(let j =0;j<=n;j++){
 }
 return add2 - add1;
 }
-console.log(missing(n,arr))
+console.log(missing(n,arr))  */
+
+
+// -----> by second method
+
+const n = 5;
+const arr = [1,2,3,5]
+
+
+
+
+
+
 
 
 
