@@ -1,3 +1,12 @@
+// Given an array and a sum k, we need to print the length of the longest subarray that sums to k.
+
+// Example 1:
+// Input Format: N = 3, k = 5, array[] = {2,3,5}
+// Result: 2
+// Explanation: The longest subarray with sum 5 is {2, 3}. And its length is 2.
+
+
+
 
 function getLongestSubarray(a, k) {
     let n = a.length; // size of the array
@@ -18,7 +27,7 @@ function getLongestSubarray(a, k) {
     return len;
 }
 
-let a = [2, 3, 5, 1, 9];
-let k = 10;
+let a = [-1, 1, 1];
+let k = 1;
 let len = getLongestSubarray(a, k);
 console.log("The length of the longest subarray is:", len);
