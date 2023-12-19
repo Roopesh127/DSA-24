@@ -12,4 +12,4 @@ function CheckPrime(number){
       }
       return true;
 }
-console.log(CheckPrime(2));
+console.log(CheckPrime(	67280421310721));

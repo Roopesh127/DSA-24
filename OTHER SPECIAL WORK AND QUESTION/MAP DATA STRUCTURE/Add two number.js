@@ -3,21 +3,20 @@
 // 3. if - avialable -> return -> diff & arr[i]
 //    else - obj [arr[i]]
 
-
-function AddTwo(arr,target){
-    let obj = {};
-    for(let i=0;i<=arr.length-1;i++){
-        let diff = target - arr[i];
-        // console.log(diff)
-        if(obj.hasOwnProperty(diff)){
-            return [diff,arr[i]];
-        }
-        else{
-            obj[arr[i]] = true
-        }
-    }
-}
-console.log(AddTwo([3,5,8,9,11],13))
+// function AddTwo(arr,target){
+//     let obj = {};
+//     for(let i=0;i<=arr.length-1;i++){
+//         let diff = target - arr[i];
+//         // console.log(diff)
+//         if(obj.hasOwnProperty(diff)){
+//             return [diff,arr[i]];
+//         }
+//         else{
+//             obj[arr[i]] = true
+//         }
+//     }
+// }
+// console.log(AddTwo([3,5,8,9,11],13))
 
 
 
