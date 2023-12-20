@@ -11,7 +11,7 @@ function Uppercase(title){
             // console.log(str[i][j])
             if(str[i].length>2){
                 console.log(str[i])
-                // const capitalize = str[i].map((map1)=>(map1.charAt(0).toUpperCase()) + (map1.slice(1).toLowerCase())).join(" ");
+                const capitalize = str[i].split(" ").map((map1)=>(map1.charAt(0).toUpperCase()) + (map1.slice(1).toLowerCase())).join(" ");
             console.log(capitalize)
             } 
         }
@@ -21,7 +21,7 @@ function Uppercase(title){
    
    
 }
-Uppercase("i hate leetcode")
+Uppercase("sHri rAM inSTItutE of tecHNOLogy")
 
 
 
