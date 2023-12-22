@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+// Converting one dimensional array into n dimensional array using slice.
+// const input = covertArryInOneDimension(["a", "b", "c", "d"], 2);
+
+// // Output
+// [
+//   ["a", "b"],
+//   ["c", "d"],
+// ];
+
+function TwoDi(arr,n){
+   let Blank = [];
+   for(let i=0;i<arr.length;i=i+n){
+    var  newBlank = [...arr[i],...arr[i+1]]
+    // console.log(newBlank)
+    Blank.push(newBlank);
+   }
+      console.log(Blank)
+}
+TwoDi(["a", "b", "c", "d","e","f","g","h"],2)
+
+// function TwoDimention(arr,n){
+//     let BlankArray = [];
+//     for(let i=0;i<arr.length;i++){
+//         // console.log(arr[i])
+//         let Blank1 = [];
+//         for(let j =i; j<= arr[i].length-1 ;j = j+n ){
+//             console.log(arr[j])
+//         }
+//         // while(let j <= j+n){
+//         //     console.log(arr[j])
+//         // }
+//     }
+// }
+// TwoDimention(["a", "b", "c", "d"], 2)
+
+
+
+
+// function TwoDimension(arr,n){
+//    let BlankArray = [];
+//    for(let i=0;i<arr.length;i =i+n){
+//     const changingArray = arr.slice(i,i+n);
+//     BlankArray.push(changingArray);
+//    console.log(BlankArray)
+// }
+// }
+//    TwoDimension(["a", "b", "c", "d","e","f","g","h"],3)
+   
+   
+
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
