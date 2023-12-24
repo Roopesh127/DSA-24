@@ -1,18 +1,22 @@
 // Checking all letters of second words should present in first word, 
 // in the same order using indexOf without indexing i.e for-of loop.let 
 
-   let str1 = "Roopesh";
-   let str2 = "roopesh";
+let str1 = "Roopesh";
+let str2 = "roopesh";
 
-   for(let one of str1);
-   let first = str1[one];
-   
-   for(let two of str2);
-   let second = str2[two];
+let isPresent = true;
 
-   if(first == second){
-    console.log("true")
-   }
-   else{
-    console.log("false")
-   }
+for (let i = 0; i < str2.length; i++) {
+    let char = str2[i];
+    
+    if (str1.indexOf(char) === -1) {
+        isPresent = false;
+        break;
+    }
+}
+
+if (isPresent) {
+    console.log("true");
+} else {
+    console.log("false");
+}
