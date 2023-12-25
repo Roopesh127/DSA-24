@@ -8,32 +8,22 @@ function checkstr(str1,str2){
     let str3 = str1.toLowerCase()
     let str4 = str2.toLowerCase()
 
-
     let count = 0;
     for(let i of str3){
-        if(str3[count] !== str4[count]){
+        if(i !== str4.charAt(count)){
+            // if(str3[count] !== str4[count]){  --> by using of indexing
             return false;
         }
-        count++;
+        count ++;
     }
     return true;
+}
+console.log(checkstr("Roopesh","roopesh"))
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-    // let count = 0;
+// let count = 0;
     // for(let i of str3){
     //     if(str3[count] !== str4[count]){
     //         return false;
@@ -41,6 +31,3 @@ function checkstr(str1,str2){
     //        count++;
     //  }
     //  return true;
-
-    }
-console.log(checkstr("Roopesh","roopesh"))
