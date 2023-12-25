@@ -4,22 +4,43 @@
 // let str1 = "Roopesh";
 // let str2 = "roopesh";
 
-// let currentIndex = -1;
+function checkstr(str1,str2){
+    let str3 = str1.toLowerCase()
+    let str4 = str2.toLowerCase()
 
-// for (let i = 0; i < str2.length; i++) {
-//     let char = str2[i];
 
-//     // Find the index of the current character in str1
-//     currentIndex = str1.indexOf(char, currentIndex + 1);
+    let count = 0;
+    for(let i of str3){
+        if(str3[count] !== str4[count]){
+            return false;
+        }
+        count++;
+    }
+    return true;
 
-//     // If the character is not found or the index is not in the expected order
-//     if (currentIndex === -1 || currentIndex < i) {
-//         console.log("false");
-//         break;
-//     }
-    
-//     // If it's the last character and all characters are in order
-//     if (i === str2.length - 1) {
-//         console.log("true");
-//     }
-// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // let count = 0;
+    // for(let i of str3){
+    //     if(str3[count] !== str4[count]){
+    //         return false;
+    //    }
+    //        count++;
+    //  }
+    //  return true;
+
+    }
+console.log(checkstr("Roopesh","roopesh"))
