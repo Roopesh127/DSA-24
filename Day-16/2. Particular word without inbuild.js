@@ -26,16 +26,20 @@ function checkWord(arr,num){
     //     }
     //     return "no";
     // }
-   if(!Array.isArray(arr)){
-    arr=arr.split(" ");
-   }
 
-    for(let i of arr){
-        if(i==num){
-            return true;
-        }
-    }
-    return false;
+// 2. Short Method
+
+//    if(!Array.isArray(arr)){
+//     arr=arr.split(" ");
+//    }
+
+//     for(let i of arr){
+//         if(i==num){
+//             return true;
+//         }
+//     }
+//     return false;
+
 }
 // console.log(checkWord([1,2,3,4,5],4))
 console.log(checkWord("Geeks for Geeks", "for"))
