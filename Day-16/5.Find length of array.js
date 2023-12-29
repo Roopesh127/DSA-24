@@ -2,7 +2,7 @@
 
 function LengthofArray(arr){
 //   console.log(arr.length)
-   let loopCount = 0;
+   let KeyCount = 0;
    for(let i of arr){
        loopCount++;
    }
