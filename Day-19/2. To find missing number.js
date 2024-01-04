@@ -3,17 +3,40 @@
 
 // Output = [3, 4, 5];
 
-function MissingNumber(arr){
-    let blank = [];
+function MissingNumbers(arr){
+   let min = 1;
+   let max = 1;
    for(let i=0;i<arr.length;i++){
-      // console.log(arr[i])
-     for(let j = i+1;j<=arr.length;j++){
-      //   if((arr[j] - arr[i]) > 1){
-      //       blank.push(arr[i]+2);
-      //   }
-     }
+      if(arr[i]<min){
+         min = arr[i];
+      }
+      if(arr[i]>max){
+         max = arr[i]
+      }
    }
-   // console.log(blank)
+   // console.log(min,max)
+   let blank = [];
+   for(let j = min;j<max;j++){
+      if(!arr.includes(j)){
+         blank.push(j)
+      }
+   }
+   console.log(blank)
 }
-MissingNumber([1, 2, 6]);
+MissingNumbers([1, 2, 6])
 
+
+// const findMissing = num => {
+//    const max = Math.max(...num); 
+//    const min = Math.min(...num); 
+//    const missing = []
+ 
+//    for(let i=min; i<= max; i++) {
+//      if(!num.includes(i)) { 
+//        missing.push(i); 
+//      }
+//    }
+//    return missing;
+//  }
+ 
+//  findMissing([1,15]);
