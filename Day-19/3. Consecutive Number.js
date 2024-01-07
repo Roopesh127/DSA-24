@@ -28,9 +28,6 @@ function Consecutive(arr){
             }
         }
     }
-
-      
-
     let finalblank = [...arr,...blank];
         console.log(finalblank)
 }
