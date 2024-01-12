@@ -1,13 +1,6 @@
 // const input = FrequencySort("cCaaAAbbbBBBaaaa")
 //     output = "aaaaaabbbBBBAAcC"
 
-// const input = ("cCaaAAbbbBBBaaaa")
-// const split = input.split('')
-// const sortt = split.sort()
-// console.log(sortt)
-
-
-
 
 // function Countfrequency(str) {
 //     const charcount = {}; // created object

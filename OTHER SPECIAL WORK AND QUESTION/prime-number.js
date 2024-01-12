@@ -1,14 +1,15 @@
 // ENTER NUMBER IS PRIME OR NOT
 
-function primenumber(x) {
-    if (x <= 1) {
-        return " pime number should be greater than 1 "
+function PrimeNum(n){
+    if(n<=1){
+        return "prime should be greater than 1";
     }
-    for (let i = 2; i < x; i++) {
-        if (x % i == 0) {
-            return "not a prime number";
-        }
+    for(let i=2;i<n;i++){
+       if(n%i === 0){
+        return "not prime;"
+       }   
     }
-    return "prime number";
+    return "Prime Number";
 }
-console.log(primenumber(9))
+console.log(PrimeNum(15));
+
