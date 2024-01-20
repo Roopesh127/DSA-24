@@ -1,17 +1,21 @@
-const arr = [1, 2, 3, 4, 5, 6, 7, 8,];
+// input = [1, 2, 3, 4, 5, 6, 7, 8];
+// output = 8
 
-// BY MAX VARIABLE
+// input = [8,10,5,7,9];
+// output = 10;
 
-function largest() {
-    let max = 0;
-    for (let i = 0; i <= arr.length; i++) {
-        if (arr[i] > max) {
-            max = arr[i]
-        }
+function LargestElement(arr){
+   let max = 0;
+   for(let i=0;i<arr.length;i++){
+    if(arr[i]>max){
+        max = arr[i]
     }
-    return max;
+   }
+   console.log(max)
 }
-console.log(largest())
+LargestElement([1, 2, 3, 4, 5, 6, 7, 8]);
+
+
 
 // BY SORTING METHOD
 
