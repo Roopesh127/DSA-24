@@ -28,7 +28,23 @@ Second([-3, 7, -8, 15, 0, 12, -5, 9])
 
 
 
-
+function Second(arr){
+    let largest = 0;
+    let secondlargest = 0;
+ 
+    for(let i=0;i<arr.length;i++){
+     if(arr[i]>largest){
+         secondlargest = largest;
+         largest = arr[i]
+     }
+     else if (arr[i]>secondlargest){
+         secondlargest = arr[i]
+     }
+    }
+    console.log(largest);
+    console.log(secondlargest)
+ }
+ Second([-3, 7, -8, 15, 0, 12, -5, 9])
 
 
 // function work() {
