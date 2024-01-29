@@ -1,11 +1,34 @@
 // Left Rotate the Array by One
-// k = 3
+// n = 1;
+// input  = [4,5,6,7,1,2,3]
 // output = [5,6,7,1,2,3,4]
 
-const arr = [1,2,3,4,5,6,7]
-function leftRotate(arr,k){
-    let spliced = arr.splice(0,arr.length - (k-1))
-    const merged =  arr.concat(spliced)
-    return merged
+
+function leftRotateArray(arr,n){
+   let newArr = [];
+//    let secondArr = [];
+   for(let i=n;i<arr.length;i++){
+    newArr.push(arr[i])
+   }
+   for(let j=0 ; j<n;j++){
+    newArr.push(arr[j])
+   }
+   return newArr;
+//    let finalArr = [...newArr,...secondArr];
+
+//    return finalArr;
 }
-console.log(leftRotate(arr,3))
+console.log(leftRotateArray([4,5,6,7,1,2,3],1));
+
+
+
+
+
+
+// const arr = [1,2,3,4,5,6,7]
+// function leftRotate(arr,k){
+//     let spliced = arr.splice(0,arr.length - (k-1))
+//     const merged =  arr.concat(spliced)
+//     return merged
+// }
+// console.log(leftRotate(arr,3))
