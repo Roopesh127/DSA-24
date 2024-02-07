@@ -10,70 +10,64 @@
 // Result: 4
 // Explanation: In this array, only element 4 appear once and the other elements appear twice. So, 4 is the answer.
 
-const arr= [1,2,3,1,2,1]
 
-// by linear search
-function ones(){
-   for(let i=0;i<=arr.length;i++){
-    let num = arr[i]
-    // console.log(num)
-    let count =0;
-   for(let j=0;j<=arr.length;j++){
-    // console.log(arr[j])
-   
-    if(num == arr[j])
-    count ++;
- }
- if(count === 1){
-    return num;
-  }
+// -----> by object method
 
-}
-    return -1;
-}
-console.log(ones(arr));
-
-
-
-
-
-
-
-
-// /**
-//  * @param {number[]} nums
-//  * @return {number}
-//  */
-// var singleNumber = function(nums) {
-//     nums.sort()
- 
- for(let i=0;i<nums.length;i++){
- <!-- if next el same than is check 2 next element -->
-     if(nums[i]==nums[i+1]){
-         i++
-     }else{
-         return nums[i]
-     }
- }
- };
-
-
-
-
-
-
-
-
-
-// function onesTime(){
-//     let blank = [];
-//     let sorted = arr.sort();
-//     // console.log(sorted)
-//     for(let i=0;i<=sorted.length;i++){
-//        if(arr[i]!== arr[i+1]){
-//         blank.push(arr[i]);
-//        }
+// function ElementCheck(arr){
+//   let obj  = {};
+//   for(let i=0;i<arr.length;i++){
+//     if(obj[arr[i]]){
+//         obj[arr[i]]++
 //     }
-//     return blank;
+//     else{
+//         obj[arr[i]] = 1;
+//     }
+//   }
+//     // console.log(obj) 
+//     let result;
+//     Object.keys(obj).forEach(key=>{
+//         if(obj[key] === 1){
+//              result = key;
+//         }
+//     });
+//     console.log(result);
 // }
-// console.log( onesTime(arr));
+// ElementCheck([1,2,3,3,1,1])
+
+
+
+//  ------> by linear search
+
+// function foundOne(arr){
+//    for(let i=0;i<arr.length;i++){
+//        let num = arr[i];
+//        let count = 0; 
+
+//        for(let j=0;j<arr.length;j++){
+//         if(arr[j] === num)
+//         count++;
+//       }
+//       if(count === 1){
+//         return num;
+//        }
+//    }
+//   return -1; 
+// }
+// console.log(foundOne([1,2,2,3,3,3,4,4]))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
