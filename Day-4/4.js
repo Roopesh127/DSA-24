@@ -1,10 +1,18 @@
-// To find character occurance from the string
+// To find character occurance from the string  or frequency count.
 
-// const = "GeeksforGeeks"
+const str = "GeeksforGeeks"
 
-function frequencyCount(count){
+function frequencyCount(str){
     let obj = {};
-    for(let i=o;i<=count.length;i++){
-        if(count)
+    for(let i=0;i<=str.length;i++){
+        if(obj.hasOwnProperty(str[i])){
+            obj[str[i]]++;
+        }
+        else{
+            obj[str[i]] = 1;
+        }
+        
     }
+    return obj;
 }
+console.log(frequencyCount(str))
