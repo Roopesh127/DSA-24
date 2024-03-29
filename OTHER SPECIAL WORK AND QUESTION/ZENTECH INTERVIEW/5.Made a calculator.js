@@ -22,3 +22,6 @@ function Calculator(a,b){
    Devidation(a,b)
 }
 Calculator(5,2)
+////////////////////
+
+jhjbjhgjgy v   
