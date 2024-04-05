@@ -5,6 +5,27 @@
 // Result: 2
 // Explanation: The longest subarray with sum 5 is {2, 3}. And its length is 2.
 
+// Example 2:
+// Input Format:
+//  N = 4, array[] = {3, 1, 2, 4}, k = 6
+// Result:
+//  2
+// Explanation:
+//  The subarrays that sum up to 6 are [3, 1, 2] and [2, 4].
+
+function lengthOfSubArray(nums, k) {
+  let new1 = [];
+  for (let i = 0; i < nums.length; i++) {
+    for (let j = i + 1; j < nums.length; j++) {
+      if (nums[i] + nums[j] == k) {
+        new1.push(nums[i], nums[j]);
+      }
+    }
+  }
+  console.log(new1);
+}
+lengthOfSubArray([3, 1, 2, 4], 6);
+
 // function getLongestSubarray(a, k) {
 //     let n = a.length; // size of the array
 

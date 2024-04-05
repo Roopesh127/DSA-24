@@ -5,18 +5,32 @@
 // Output: [0,1]
 // Explanation: Because nums[0] + nums[1] == 9, we return [0, 1].
 
-function findSum(arr, target) {
+function pairIsExist(arr, t) {
+  let blank = [];
   for (let i = 0; i < arr.length; i++) {
     for (let j = i + 1; j < arr.length; j++) {
-      if (arr[i] + arr[j] == target) {
-        return [i, j];
+      if (arr[i] + arr[j] == t) {
+        blank.push(i, j);
+        return blank;
       }
-      
     }
+  }
+  return "no";
 }
-    return null;
-}
-console.log(findSum([3,0,0,3,2,4], 5))
+console.log(pairIsExist([1, 5, 4, 2, 7, 11, 15], 9));
+
+// function findSum(arr, target) {
+//   for (let i = 0; i < arr.length; i++) {
+//     for (let j = i + 1; j < arr.length; j++) {
+//       if (arr[i] + arr[j] == target) {
+//         return [i, j];
+//       }
+
+//     }
+// }
+//     return null;
+// }
+// console.log(findSum([3,0,0,3,2,4], 5))
 
 // var twoSum = function(nums, target) {
 //     let mp = new Map()
