@@ -127,19 +127,27 @@
       //
       //7.
       //
-      //     1
-      //    123
-      //   12345
-      //  1234567
+      // ____1
+      // ___123
+      // __12345
+      // _1234567
       // 123456789
       //
       //
-      // function pattern(n){
-      //   let output = "";
-      //   for(let i = 1;i<=n;i++){
-      //       for(let j = )
+      //   function pattern(n) {
+      //     let output = "";
+      //     for (let i = 1; i <= n; i++) {
+      //       for (let j = 1; j <= n - i; j++) {
+      //         output += " ";
+      //       }
+      //       for (let k = 1; k <= 2 * i - 1; k++) {
+      //         output += k;
+      //       }
+      //       output += "\n";
+      //     }
+      //     return output;
       //   }
-      // }
+      //   console.log(pattern(5));
       //
       //
       //
@@ -197,6 +205,228 @@
       //     for (let i = 1; i <= n; i++) {
       //       for (let j = 1; j <= n - i + 1; j++) {
       //         output += j;
+      //       }
+      //       output += "\n";
+      //     }
+      //     return output;
+      //   }
+      //   console.log(pattern(5));
+      //
+      //
+      // 11.
+      //
+      //   1
+      //  234
+      // 56789
+      //
+      //   function pattern(n) {
+      //     let output = "";
+      //     let initialvalue = 1;
+      //     for (let i = 1; i <= n; i++) {
+      //       for (let j = 1; j <= n - i; j++) {
+      //         output += " ";
+      //       }
+      //       for (let k = 1; k <= 2 * i - 1; k++) {
+      //         output += initialvalue;
+      //         initialvalue++;
+      //       }
+      //       output += "\n";
+      //     }
+      //     return output;
+      //   }
+      //   console.log(pattern(3));
+      //
+      // 12 .
+      //     *
+      //    **
+      //   ***
+      //  ****
+      // *****
+      //   function pattern(n) {
+      //     let output = "";
+      //     for (let i = 1; i <= n; i++) {
+      //       for (let space = 1; space <= n - i; space++) {
+      //         output += " ";
+      //       }
+      //       for (let j = 1; j <= i; j++) {
+      //         output += "*";
+      //       }
+      //       output += "\n";
+      //     }
+      //     return output;
+      //   }
+      //   console.log(pattern(5));
+      //
+      // 13.
+      //
+      // *
+      // **
+      // ***
+      // ****
+      // *****
+      //
+      //   function pattern(n) {
+      //     let output = "";
+      //     for (let i = 1; i <= n; i++) {
+      //       for (let j = 1; j <= i; j++) {
+      //         output += "*";
+      //       }
+      //       output += "\n";
+      //     }
+      //     return output;
+      //   }
+      //   console.log(pattern(5));
+      //
+      //
+      // 14 .
+      //
+      //     *
+      //    ***
+      //   *****
+      //  *******
+      // *********
+
+      //   function pattern(n) {
+      //     let output = "";
+      //     for (let i = 1; i <= n; i++) {
+      //       for (let space = 1; space <= n - i; space++) {
+      //         output += " ";
+      //       }
+      //       for (let j = 1; j <= 2 * i - 1; j++) {
+      //         output += "*";
+      //       }
+      //       output += "\n";
+      //     }
+      //     return output;
+      //   }
+      //   console.log(pattern(5));
+      //
+      // 15.
+      //
+      // 54321
+      // 5432
+      // 543
+      // 54
+      // 5
+      //
+      //   function pattern(n) {
+      //     let output = "";
+      //     for (let i = 1; i <= n; i++) {
+      //       for (let j = n; j >= i; j--) {
+      //         output += j;
+      //       }
+      //       output += "\n";
+      //     }
+      //     return output;
+      //   }
+      //   console.log(pattern(5));
+      //
+      // 16.
+      //
+      // 55555
+      // 4444
+      // 333
+      // 22
+      // 1
+      //
+      //   function pattern(n) {
+      //     let output = "";
+      //     let variable = 5;
+      //     for (let i = 1; i <= n; i++) {
+      //       for (let j = n; j >= i; j--) {
+      //         output += variable;
+      //       }
+      //       variable--;
+      //       output += "\n";
+      //     }
+      //     return output;
+      //   }
+      //   console.log(pattern(5));
+      // 17.
+      // 54321
+      // 4321
+      // 321
+      // 21
+      // 1
+      //
+      //   function pattern(n) {
+      //     let output = "";
+      //     for (let i = 1; i <= n; i++) {
+      //       for (let j = n + 1 - i; j >= 1; j--) {
+      //         output += j;
+      //       }
+      //       output += "\n";
+      //     }
+      //     return output;
+      //   }
+      //   console.log(pattern(5));
+      //
+      //
+      // 17.
+      //
+      // AAAAA
+      // AAAA
+      // AAA
+      // AA
+      // A
+      //
+      // B
+      // BB
+      // BBB
+      // BBBB
+      // BBBBB
+      //
+      //   function pattern(n, m) {
+      //     let output = "";
+      //     for (let i = 1; i <= n; i++) {
+      //       for (let j = n; j >= i; j--) {
+      //         output += "A";
+      //       }
+      //       output += "\n";
+      //     }
+      //     output += "\n";
+
+      //     for (let r = 1; r <= m; r++) {
+      //       for (let s = 1; s <= r; s++) {
+      //         output += "B";
+      //       }
+      //       output += "\n";
+      //     }
+      //     return output;
+      //   }
+      //   console.log(pattern(5, 5));
+      //
+      // 18.
+      //
+      //      *
+      //     ***
+      //    *****
+      //   *******
+      //  *********
+      //  *********
+      //   *******
+      //    *****
+      //     ***
+      //      *
+      //
+      //   function pattern(n) {
+      //     let output = "";
+      //     for (let i = 1; i <= n; i++) {
+      //       for (let space = 1; space <= n - i; space++) {
+      //         output += " ";
+      //       }
+      //       for (let j = 1; j <= 2 * i - 1; j++) {
+      //         output += "*";
+      //       }
+      //       output += "\n";
+      //     }
+
+      //     for (let r = 1; r <= n; r++) {
+      //       for (let sketch = 1; sketch < r; sketch++) {
+      //         output += " ";
+      //       }
+      //       for (let k = 1; k <= 2 * (n - r) + 1; k++) {
+      //         output += "*";
       //       }
       //       output += "\n";
       //     }
