@@ -8,7 +8,6 @@
 // }
 // StringReverse("roopesh")
 
-
 // 2. by loop
 
 // function reverseString(str){
@@ -19,5 +18,11 @@
 // }
 // reverseString("roopesh")
 
-// 3. by recurssion
-
+// function reverse(str) {
+//   let reverse = "";
+//   for (let i = str.length - 1; i >= 0; i--) {
+//     reverse += str[i];
+//   }
+//   return reverse;
+// }
+// console.log(reverse("Roopesh"));

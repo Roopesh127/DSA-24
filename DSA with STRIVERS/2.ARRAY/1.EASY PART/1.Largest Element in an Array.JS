@@ -4,18 +4,27 @@
 // input = [8,10,5,7,9];
 // output = 10;
 
-function LargestElement(arr){
-   let max = 0;
-   for(let i=0;i<arr.length;i++){
-    if(arr[i]>max){
-        max = arr[i]
-    }
-   }
-   console.log(max)
-}
-LargestElement([1, 2, 3, 4, 5, 6, 7, 8]);
+// function largestElement(arr) {
+//   let large = 0;
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] > large) {
+//       large = arr[i];
+//     }
+//   }
+//   return large;
+// }
+// console.log(largestElement([13, 5, 1, 8]));
 
-
+// function LargestElement(arr){
+//    let max = 0;
+//    for(let i=0;i<arr.length;i++){
+//     if(arr[i]>max){
+//         max = arr[i]
+//     }
+//    }
+//    console.log(max)
+// }
+// LargestElement([1, 2, 3, 4, 5, 6, 7, 8]);
 
 // BY SORTING METHOD
 

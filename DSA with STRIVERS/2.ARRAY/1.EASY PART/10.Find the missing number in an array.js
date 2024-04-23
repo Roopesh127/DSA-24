@@ -22,23 +22,19 @@ return add2 - add1;
 }
 console.log(missing(n,arr))  */
 
-
 // -----> by second method
 
-const n = 5;
-const arr = [1,2,3,5]
+const arr = [1, 2, 3, 5];
 
-
-
-
-
-
-
-
-
-
-
-
+function missingNumber(arr) {
+  for (let i = 0; i <= arr.length; i++) {
+    if (arr[i + 1] - arr[i] > 1) {
+      return arr[i + 1] - 1;
+    }
+  }
+  return "no one is missing";
+}
+console.log(missingNumber(arr));
 
 // function missing(n,arr){
 //     let new1 ;
@@ -54,11 +50,6 @@ const arr = [1,2,3,5]
 //     return new1 - new2;
 // }
 // console.log(missing(5,[1,2,3,5]));
-
-
-
-
-
 
 // let n =5; // 1+2+3+4+5 = 15
 
@@ -81,7 +72,3 @@ const arr = [1,2,3,5]
 // console.log("there is no miss")
 // }
 // else{console.log(miss)}
-
-
-
-

@@ -1,57 +1,17 @@
 // By Object Method
 
-const arr = [3, 2, 1, 3, 5, 3]
+// const arr = [3, 2, 1, 3, 5, 3];
 
-
-const arr = [1, 1, 2, 2, 2, 3, 3];
-function RemoveDuplicate() {
-    let new1 = 0;
-    for (let i = 0; i < arr.length; i++) {
-        for (let j = 1; j < arr.length; j++) {
-            if (arr[i] !== arr[j]) {
-                new1 == arr[j]
-            }
-            else i++
-        }
-    }
-    return new1;
-}
-console.log(RemoveDuplicate())
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// function RemoveDuplicate() {
-//     let uniqueobj = {};
-//     for (let i = 0; i < arr.length; i++) {
-//         if (!uniqueobj.hasOwnProperty(arr[i])) {
-//             uniqueobj[arr[i]] = 1;
-//         }
-//         else {
-//             uniqueobj[arr[i]] = uniqueobj[arr[i]] + 1
-//         }
+// function removeDuplicate(arr) {
+//   let new1 = [];
+//   for (let i = 0; i < arr.length; i++) {
+//     if (!new1.includes(arr[i])) {
+//       new1.push(arr[i]);
 //     }
-//     return Object.keys(uniqueobj).map(Number);
+//   }
+//   return new1;
 // }
-// console.log(RemoveDuplicate(arr))
-
-
-
+// console.log(removeDuplicate(arr));
 
 // const arr = [1, 1, 2, 2, 2, 3, 3];
 // function RemoveDuplicate() {
@@ -68,7 +28,34 @@ console.log(RemoveDuplicate())
 // }
 // console.log(RemoveDuplicate())
 
+// function RemoveDuplicate() {
+//     let uniqueobj = {};
+//     for (let i = 0; i < arr.length; i++) {
+//         if (!uniqueobj.hasOwnProperty(arr[i])) {
+//             uniqueobj[arr[i]] = 1;
+//         }
+//         else {
+//             uniqueobj[arr[i]] = uniqueobj[arr[i]] + 1
+//         }
+//     }
+//     return Object.keys(uniqueobj).map(Number);
+// }
+// console.log(RemoveDuplicate(arr))
 
+// const arr = [1, 1, 2, 2, 2, 3, 3];
+// function RemoveDuplicate() {
+//     let new1 = 0;
+//     for (let i = 0; i < arr.length; i++) {
+//         for (let j = 1; j < arr.length; j++) {
+//             if (arr[i] !== arr[j]) {
+//                 new1 == arr[j]
+//             }
+//             else i++
+//         }
+//     }
+//     return new1;
+// }
+// console.log(RemoveDuplicate())
 
 // function removeDuplicates(arr) {
 //     let uniqueObject = {};
