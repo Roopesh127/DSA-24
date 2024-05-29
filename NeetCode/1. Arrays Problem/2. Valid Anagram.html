@@ -1,0 +1,118 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      function anagramCheck(s,t){
+        if(s.length !== t.length){
+        return false;
+       }
+       s = s.split("")
+        for(let i = 0 ; i<=s.length;i++){
+         for(let j = 0 ; j<=s.length-i;j++){
+          if(s[j]>s[j+1]){
+            [s[j],s[j+1]] =[s[j+1],s[j]]
+           }
+         }
+        }
+       let s1 = s.join("");
+       
+       t = t.split("")
+        for(let i = 0 ; i<=t.length;i++){
+         for(let j = 0 ; j<=t.length-i;j++){
+          if(t[j]>t[j+1]){
+            [t[j],t[j+1]] =[t[j+1],t[j]]
+           }
+         }
+        }
+       let t1 = t.join("");
+   
+      if(s1 !== t1){
+          return false;
+      }
+     return true;
+
+    }
+    console.log(anagramCheck("racecar","carrace"))
+
+//     function sortString(str) {
+//     // Convert the string to an array of characters
+//     let arr = str.split("");
+    
+//     // Bubble Sort algorithm
+//     for (let i = 0; i < arr.length - 1; i++) {
+//         for (let j = 0; j < arr.length - 1 - i; j++) {
+//             if (arr[j] > arr[j + 1]) {
+//                 // Swap elements
+//                 [arr[j], arr[j + 1]] = [arr[j + 1], arr[j]];
+//             }
+//         }
+//     }
+    
+//     // Convert the array back to a string
+//     return arr.join("");
+// }
+
+// console.log(sortString("dcna")); // "acdn"
+
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+<!-- // 2. Valid Anagram
+
+// s = "racecar" , r = "carrace"
+
+
+
+// by using custom sort method
+
+
+
+
+
+// function anagramCheck(s,t){
+//   let obj1 = {}
+//   let obj2 = {}
+//    for(let i of s){
+//     obj1[i] = (obj1[i] || 0)+1;
+//    }
+//    for(let j of t){
+//     obj2[j] = (obj2[j] || 0)+1;
+//    }
+//       console.log(obj1)
+//       console.log(obj2);
+// }
+// console.log(anagramCheck("racecar","carrace"));
+
+
+
+
+
+
+
+
+
+
+// function ValidAnagram(str,ttr){
+//   if(str.length !== ttr.length){
+//     return false;
+//   }
+
+//  if (str.split("").sort().join("")===ttr.split("").sort().join("")){
+//     return true;
+//  }
+//     return false;
+// }
+// console.log(ValidAnagram("racecar","crrace")) -->
