@@ -9,57 +9,40 @@
 </head>
 <body>
     <script>
-      function anagramCheck(s,t){
-        if(s.length !== t.length){
-        return false;
-       }
-       s = s.split("")
-        for(let i = 0 ; i<=s.length;i++){
-         for(let j = 0 ; j<=s.length-i;j++){
-          if(s[j]>s[j+1]){
-            [s[j],s[j+1]] =[s[j+1],s[j]]
-           }
-         }
-        }
-       let s1 = s.join("");
+
+
+
+    //   function anagramCheck(s,t){
+    //     if(s.length !== t.length){
+    //     return false;
+    //    }
+    //    s = s.split("")
+    //     for(let i = 0 ; i<=s.length;i++){
+    //      for(let j = 0 ; j<=s.length-i;j++){
+    //       if(s[j]>s[j+1]){
+    //         [s[j],s[j+1]] =[s[j+1],s[j]]
+    //        }
+    //      }
+    //     }
+    //    let s1 = s.join("");
        
-       t = t.split("")
-        for(let i = 0 ; i<=t.length;i++){
-         for(let j = 0 ; j<=t.length-i;j++){
-          if(t[j]>t[j+1]){
-            [t[j],t[j+1]] =[t[j+1],t[j]]
-           }
-         }
-        }
-       let t1 = t.join("");
+    //    t = t.split("")
+    //     for(let i = 0 ; i<=t.length;i++){
+    //      for(let j = 0 ; j<=t.length-i;j++){
+    //       if(t[j]>t[j+1]){
+    //         [t[j],t[j+1]] =[t[j+1],t[j]]
+    //        }
+    //      }
+    //     }
+    //    let t1 = t.join("");
    
-      if(s1 !== t1){
-          return false;
-      }
-     return true;
+    //   if(s1 !== t1){
+    //       return false;
+    //   }
+    //  return true;
 
-    }
-    console.log(anagramCheck("racecar","carrace"))
-
-//     function sortString(str) {
-//     // Convert the string to an array of characters
-//     let arr = str.split("");
-    
-//     // Bubble Sort algorithm
-//     for (let i = 0; i < arr.length - 1; i++) {
-//         for (let j = 0; j < arr.length - 1 - i; j++) {
-//             if (arr[j] > arr[j + 1]) {
-//                 // Swap elements
-//                 [arr[j], arr[j + 1]] = [arr[j + 1], arr[j]];
-//             }
-//         }
-//     }
-    
-//     // Convert the array back to a string
-//     return arr.join("");
-// }
-
-// console.log(sortString("dcna")); // "acdn"
+    // }
+    // console.log(anagramCheck("racecar","carrace"))
 
     </script>
 </body>
