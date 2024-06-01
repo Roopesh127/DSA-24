@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    // Input: strs = ["act","pots","tops","cat","stop","hat"]
+    // Output: [["hat"],["act", "cat"],["stop", "pots", "tops"]]
+
+    function groupAnagrams(strs) {
+    //   if(strs.length == 0) return [[""]];
+      let new1 = [];
+      for(let i=0;i<strs.length;i++){
+        for(let j = strs[i]+1 ; j<=strs.length;j++){
+         if(strs[i].split("").join("") === strs[j].split("").join("")){
+          let c1 = [strs[i],strs[j]]
+          new1.push(strs[i])
+         }
+        }
+      }
+      console.log("new1",new1);
+    }
+    groupAnagrams(["act","pots","tops","cat","stop","hat"])
+
+    </script>
+</body>
+</html>
