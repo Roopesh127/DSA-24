@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+   //Create a function that generates the Fibonacci sequence up to a specified number of terms.
+
+// 1. by Recurssion function
+
+// function fibonacci(n,a=0,b=1){
+//   if(n>0){
+//     console.log(a);
+//      fibonacci(n-1,b,a+b)
+//   }
+// }
+// console.log(fibonacci(8))
+
+
+function FabinocciSeries(n){
+   if(n<=1){
+      return n;
+   }
+   else{
+         return FabinocciSeries(n-1) + FabinocciSeries(n-2)
+   }
+}
+console.log(FabinocciSeries(5))
+
+
+
+
+
+
+
+
+
+
+
+
+
+// 2. by loop
+// function fabinocci(n){
+//    let a = 0;
+//    let b = 1;
+//    for(let i = 0; i<n;i++){
+//       let temp = a+b;
+//       a = b;
+//       b = temp;
+//       console.log(a)
+//    }
+// }
+// fabinocci(5)
+
+ 
+    </script>
+</body>
+</html>
