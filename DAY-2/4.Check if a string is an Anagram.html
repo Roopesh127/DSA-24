@@ -1,28 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
 // JAVAscript program to check if two strings are anagrams of each other
 
-function anagram(str1, str2) {
-    if (str1.length !== str2.length) {
-        return false;
-    }
-    const result = {};
-    for (let i=0;i<str1.length;i++) {
-        let char = str1[i];
-        result[char] = result[char] ? result[char] += 1 : result[char] = 1;
-    }
+function CheckAnagram(str1,str2){
+ if(str1.length !== str2.length) return "not anagram";
 
-    for (let i=0;i<str2.length;i++) {
-        let char = str2[i];
-        if (!result[char]) {
-            return false;
-        }
-        else {
-            result[char] = -1;
-        }
-    }
-    return true;
+ let obj = {};
+ for(let letter of str1){
+  obj[letter] = (obj[letter] || 0)+1;
+ }
+
+ for(let charater of str2){
+  if(!obj[charater]) return "not anagram";
+  else --obj[charater];
+ }
+return "anagram"
 }
+console.log(CheckAnagram("roopesh","mamamaa"))
 
-console.log(anagram('kanak','knaak'));
+
+
+
+
+
+
+
+// function anagram(str1, str2) {
+//     if (str1.length !== str2.length) {
+//         return false;
+//     }
+//     const result = {};
+//     for (let i=0;i<str1.length;i++) {
+//         let char = str1[i];
+//         result[char] = result[char] ? result[char] += 1 : result[char] = 1;
+//     }
+
+//     for (let i=0;i<str2.length;i++) {
+//         let char = str2[i];
+//         if (!result[char]) {
+//             return false;
+//         }
+//         else {
+//             result[char] = -1;
+//         }
+//     }
+//     return true;
+// }
+
+// console.log(anagram('kanak','knaak'));
 
 // By using length:-
 
@@ -84,4 +118,8 @@ console.log(anagram('kanak','knaak'));
 // }
 // s.split("")
 // };
-// IsAnagram("carrt","rract")
+// IsAnagram("carrt","rract")  
+
+    </script>
+</body>
+</html>

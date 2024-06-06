@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+// Find factorial of user input number
+
+function Factorial(n){
+  if(n<=1){
+    return 1;
+  }
+  else{
+    return n* Factorial(n-1);
+  }
+}
+console.log(Factorial(5))
+
+
+
+
+// function factorial(n) {
+//     if (n === 0 || n === 1) {
+//         return 1;
+//     } else {
+//         return n * factorial(n - 1);
+//     }
+// }
+// // Get user input
+// var user_input = parseInt(prompt("Enter a number:"));
+// // Calculate and display the factorial
+// var result = factorial(user_input);
+// console.log("The factorial of " + user_input + " is " + result);
+
+</script>
+</body>
+</html>

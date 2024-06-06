@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+function LongestWord(str){
+ let neww = str.split(" ")
+ let max = "";
+ for(let i=0;i<neww.length;i++){
+   if(neww[i].length > max.length){
+     max = neww[i];
+    }
+ }
+return max;
+}
+console.log(LongestWord("hello I am Roopesh"))
+
+
+
+
+// To find longest word from a string using (for of Loop) means iterate by an elements not by indexing.
+
+// function longestword(x){
+//     for(let i of x){
+//         console.log(i)
+//     }
+//         // let new1 = i.split(" ");
+//     //     // console.log(new1)
+//     //     let max =0;
+//     //     for(let z of new1){
+//     //         max = z.length > max;
+//     //         return max;
+//     //     }
+//     }
+// }
+// console.log(longestword(" hello this is roopesh and how are you" ));
+
+// function longestword(x){
+//     for(let i of x){
+//         // console.log(i)
+
+//     let new1 = i.split("");
+//         // console.log(new1)
+//         let max =0;
+//         for(let z of new1){
+//             max = z.length > max;
+//             return max;
+//         }
+//     }
+// }
+// console.log(longestword(" hello this is roopesh and how are you" ));
+
+    </script>
+</body>
+</html>
