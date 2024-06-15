@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+
+// To find vowels and its count in a given string
+
+
+function VowelsCount(str){
+ let vowel = {}
+ for(let i=0;i<=str.length;i++){
+    if(str[i] == "a" || str[i] == "A" || str[i] == "e" ||str[i] == "E" ||str[i] == "o" ||str[i] == "O" ||str[i] == "i" ||str[i] == "I" ||str[i] == "u" ||str[i] == "U"){
+        if(vowel[str[i]]){
+          vowel[str[i]]++;
+        }
+        else{
+          vowel[str[i]] = 1;
+        }
+    }
+ }
+return vowel;
+}
+console.log(VowelsCount("rOopesh"))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const str = "roopeshaui"
+// function longestVowels(str){
+//     let vowels = {};
+//     for(let i in str){
+//         if(str[i] == "a" || str[i] ==  "e" || str[i] ==  "i" || str[i] ==  "o" || str[i] ==  "u"){
+//             if(vowels.hasOwnProperty(str[i])){
+//                 vowels[str[i]]++;
+//             }
+//             else{
+//                 vowels[str[i]] = 1;
+//             }
+            
+//         }
+//     }
+//     return vowels;
+// }
+// console.log(longestVowels(str))
+
+</script>
+</body>
+</html>
