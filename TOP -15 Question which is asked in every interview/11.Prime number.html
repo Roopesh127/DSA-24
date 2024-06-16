@@ -11,12 +11,18 @@
 // check enter number is prime number or not ?
 
 function checkPrimeNumber(n){
-  if(n<2) return "not a prime";
-  
+  let count = 0;
+  for(let i=1;i<=n;i++){
+    if(n%i == 0)
+     count += 1;
+  }
+
+  if(count == 2) return true;
+  return false;
 }
-console.log(checkPrimeNumber(1))
+console.log(checkPrimeNumber(25))
 
 
 </script>
 </body>
-</html>
+</html> 
