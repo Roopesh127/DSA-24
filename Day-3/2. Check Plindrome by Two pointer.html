@@ -1,22 +1,23 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <script>
+      // To check the string or number is palindrome or not( ex: 121,madam,anna) using diving length
+      //  by 2 and then comparing
 
-// To check the string or number is palindrome or not( ex: 121,madam,anna) using diving length
-//  by 2 and then comparing
-
-
-function CheckPalindrome(str){
- 
-}
-
-
+      function CheckPalindrome(str) {
+        let a = "";
+        for (let i = str.length - 1; i >= 0; i--) {
+          a += str[i];
+        }
+        return a === str;
+      }
+      console.log(CheckPalindrome("madam"));
     </script>
-</body>
+  </body>
 </html>
