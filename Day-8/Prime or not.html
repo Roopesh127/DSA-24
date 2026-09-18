@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // // To check if given number is prime or not
+
+// function CheckPrime(number) {
+//   if (number <= 1) {
+//     return false;
+//   }
+//   for (let i = 2; i <= Math.sqrt(number); i++) {
+//     if (number % i == 0) {
+//       return false;
+//     }
+//   }
+//   return true;
+// }
+// console.log(CheckPrime(67280421310721));
+
+// function checkPrime(n) {
+//   if (n < 2) {
+//     return "Prime Number should be greter than 2 or equal 2";
+//   }
+//   for (let i = 2; i <= Math.sqrt(n); i++) {
+//     if (n % i == 0) {
+//       return false;
+//     }
+//   }
+//   return true;
+// }
+// console.log(checkPrime(17));
+
+
+
+
+function checkPrime(n){
+    //prime -> n/n == 0 || n/1 ===0
+    for(let i=2;i<n;i++){
+        if(n%i === 0){
+            return i
+        }
+    }
+    return "prime Number";
+}
+console.log(checkPrime(23))
+
+
+
+
+
+
+
+</script>
+</html>

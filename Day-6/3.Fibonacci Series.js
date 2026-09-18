@@ -1,6 +1,41 @@
 // Print Fibonacci Series. 
 // example -> (0,1,1,2,3,5,8,13....)
 
+function fibonacciSeries(n){
+  if(n==0){
+    return 0;
+  }
+  if(n==1){
+    return 1;
+  }
+  console.log(n)
+  return fibonacciSeries(n-1)+ fibonacciSeries(n-2);
+  
+}
+console.log(fibonacciSeries(10))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

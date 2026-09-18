@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // To find a first pair from a number array whose sum is zero
+      // i/p => [1,2,-1,-2,3,5,-7,7]
+      // o/p => (1,-1)
+
+      function searchFirstPair(arr) {
+        let obj = {};
+        for (let i = 0; i < arr.length; i++) {
+          obj[arr[i]] = (obj[arr[i]] || 0) + 1;
+        }
+        for (let i = 0; i < arr.length; i++) {
+          if(obj.hasOwnProperty(-arr[i])){
+            return [arr[i],-arr[i]]
+          }
+        }
+      }
+      console.log(searchFirstPair([-3,1, 2, 1, -3, -3, 5, 6, 7, -7, -2]));
+
+      // function firstPair(arr) {
+      //   let sortArr = arr.sort((a, b) => a - b);
+
+      //   for (let i = 0; i < sortArr.length; i++) {
+      //     let target = -sortArr[i];
+
+      //     let l = i + 1;
+      //     let r = sortArr.length - 1;
+
+      //     while (l <= r) {
+      //       let m = Math.floor((l + r) / 2);
+
+      //       if (sortArr[m] == target) {
+      //         return [sortArr[m], -target];
+      //       }
+      //       if (sortArr[m] > target) {
+      //         r = m - 1;
+      //       }
+      //       else{
+      //          l = m+1;
+      //       }
+      //     }
+      //   }
+      // }
+      // console.log(firstPair([1, 2, -1, 3, -3, 5, 6, 7,-7, -2]));
+
+      // ### Find all possible pairs which some is zero.
+
+      // const arr = [0,1,2,3,4,-5,-1,-2]
+
+      // function firstPairofZero(arr){
+      //     let pair = []
+      //     for(let i = 0;i<arr.length;i++){
+      //         for(let j = 1 ; j<arr.length ; j++){
+      //             if(arr[i]+arr[j] === 0){
+      //                 pair.push(arr[i],arr[j])
+      //             }
+      //         }
+      //     }
+      //     return pair;
+      // }
+      // console.log(firstPairofZero(arr))
+    </script>
+  </body>
+</html>

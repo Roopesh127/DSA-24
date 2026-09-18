@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Finding a missing elements in an array and then add with existing elements.
+      //  (-1 means if elements not found then it will return always -1 as per rule)
+
+      // function MissingElement(arr){
+      //     for(let i=0;i<arr.length-1;i++){
+      //         for(let j=i+1;j<arr.length;j++){
+      //             if(arr[j] - arr[i] > 1){
+      //                 return arr[i]+1;
+      //             }
+      //         }
+      //     }
+      //     return "-1";
+      // }
+      // console.log(MissingElement([0,1,2,3,4,5,6]));
+
+      function MissingElement(arr) {
+        let min = Math.min(...arr);
+        let max = Math.max(...arr);
+
+        let expectedOutput = 0;
+
+        for (let i = min; i <= max; i++) {
+          expectedOutput += i;
+        }
+
+        let currentOutput = 0;
+
+        for (let i = 0; i < arr.length; i++) {
+          currentOutput += arr[i];
+        }
+
+        if (expectedOutput - currentOutput > 0) {
+          return expectedOutput - currentOutput;
+        }
+
+        return -1;
+      }
+      console.log(MissingElement([5, 1, 2, 3, 4, 6,7,10]));
+    </script>
+  </body>
+</html>

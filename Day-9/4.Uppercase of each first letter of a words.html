@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    // Uppercase of each first letter of a words
+
+    // Input: title = "capiTalIze tHe titLe"
+    // Output: "Capitalize The Title"
+
+    function Uppercase(title) {
+      let ans = "";
+      for (let i = 0; i < title.length; i++) {
+        if (i == 0) {
+          ans += title[i].toUpperCase();
+          i++
+        }
+        if (title[i - 1] === " ") {
+          ans += title[i].toUpperCase();
+        } else {
+          ans += title[i].toLowerCase();
+        }
+      }
+      console.log(ans);
+    }
+    Uppercase("sHri rAM inSTItutE of tecHNOLogy");
+  </script>
+</html>
