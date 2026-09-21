@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+</body>
+</html>
+<script>
+  // Find first duplicate element from an array
+let arr = [10,1,1, 2, 3, 3, 4, 5, 4, 5];
+
+const findFirstDuplicate = (arr) => {
+  let ans = [];
+  for (let i = 0; i < arr.length; i++) {
+    if(ans.includes(arr[i])){
+       return arr[i];
+    }
+    ans.push(arr[i])
+  }
+};
+console.log(findFirstDuplicate(arr));
+
+// function FirstDuplicate(arr){
+//     for(let i=0;i<arr.length;i++){
+//         for(let j =i+1;j<arr.length;j++){
+//             if(arr[i]==arr[j]){
+//                 return arr[j]
+//             }
+//         }
+//     }
+// }
+// console.log(FirstDuplicate([1,2,3,3,4,5,4,5]))
+
+</script>

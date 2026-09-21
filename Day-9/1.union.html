@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>
+<script>
+  // To find unique values from 2 arrays and keep into one array. i.e. Union.
+  let a = [1, 2, 3, 4, 6, 9];
+  let b = [2, 4, 5, 6, 7, 8];
+  // output = [1,2,3,4,5,6,7,8,9]
+
+  //   function union(a, b) {
+  //     let obj = {};
+  //     for (let i = 0; i < a.length; i++) {
+  //       obj[a[i]] = (obj[a[i]] || 0) + 1;
+  //     }
+  //     for (let i = 0; i < b.length; i++) {
+  //       obj[b[i]] = (obj[b[i]] || 0) + 1;
+  //     }
+
+  //     let arr = [];
+
+  //     for(let key in obj){
+  //         arr.push(Number(key));
+  //     }
+  //     console.log(arr)
+  //   }
+  //   union(a,b);
+
+  function unionArray(a, b) {
+    let set = new Set(a);
+
+    for (let i=0; i<b.length;i++) {
+      if (!set.has(b[i])) {
+        set.add(b[i]);
+      }
+    }
+    return set;
+  }
+  console.log(unionArray(a, b));
+</script>
